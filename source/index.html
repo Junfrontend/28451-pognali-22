@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="header__top-bar top-bar top-bar_opened">
+      <img src="" alt="" class="top-bar__logo" width="100px" height="15px">
+      <button class="top-bar__button "></button>
+    </div>
+    <nav class="header__navigation main-navigation">
+      <ul class="main-navigation__list nav-list">
+        <li class="nav-list__item"><a>О сервисе</a></li>
+        <li class="nav-list__item"><a>Направления</a></li>
+        <li class="nav-list__item"><a>Попутчики</a></li>
+      </ul>
+    </nav>
+    <button class="header__log-in-button">Авторизация</button>
+    <!--Возможно это ссылка, надо потом проверить-->
+    <div class="header__contacts contacts">
+      <p class="contacts__email"><a href="mailto:mail@htmlacademy.ru"></a></p>
+      <p class="contacts__phone"><a href="telto:8 800 555-86-28"></a></p>
+      <div class="contacts__social-links social-links">
+        <a class="social-links__item" href=""></a>
+        <a class="social-links__item" href=""></a>
+        <a class="social-links__item" href=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visualy-hidden">Погнали? Сервис для поиска попутчиков</h1>
+    <section class="about-service">
+      <!-- Может ли заголовок блока section h2 быть влоден во внутренний блок descripton? -->
+      <p class="about-service__signature">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+      <div class="about-service__steps-to-start steps-to-start">
+        <div class="steps-to-start__item"><span>Выберите направление</span></div>
+        <div class="steps-to-start__item"><span>Изучите идеи путешественников</span></div>
+        <div class="steps-to-start__item"><span>Находите тех, кто похож на вас</span></div>
+        <div class="steps-to-start__item"><span>Путешествуйте вместе!</span></div>
+      </div>
+      <div class="about-service__description descrption"></div>
+      <h2 class="descrption__header">О сервисе</h2>
+      <p class="descrption__item">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+        Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+      <p class="descrption__item descrption__item_strong">А если найдете кого-то близкого по духу — скорее зовите в
+        совместный трип!</p>
+    </section>
+    <section class="directions">
+      <h2 class="directions__header">Направления</h2>
+      <p class="directions__descripion">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
+        куда хотели бы отправиться и чем можно там заняться.
+      </p>
+      <div class="directions__country-cards country-cards">
+        <div class="country-cards__card card-decription">
+          <div class="card-description__under-picture">
+            <h3 class="under-picture__header">Таиланд</h3>
+            <span class="under-picture__small-decription">Джунгли зовут!</span>
+            <span class="under-picture__visiters-conter">18321</span>
+          </div>
+        </div>
+        <div class="country-cards__card card-decription">
+          <div class="card-description__under-picture">
+            <h3 class="under-picture__header">Франция</h3>
+            <span class="under-picture__small-decription">Трэ бьен, манифик!</span>
+            <span class="under-picture__visiters-conter">12518</span>
+          </div>
+        </div>
+        <div class="country-cards__card card-decription">
+          <div class="card-description__under-picture">
+            <h3 class="under-picture__header">Чехия</h3>
+            <span class="under-picture__small-decription">Закоулки старой Европы</span>
+            <span class="under-picture__visiters-conter">5326</span>
+          </div>
+        </div>
+        <a class="country-cards__link">Показать все</a> <!-- Кнопка ведет на страницу формы-->
+      </div>
+    </section>
+    <section class="companions">
+      <h2 class="companions__header">Попутчики</h2>
+      <p class="companions__descripion">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+        Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+      </p>
+      <p class="companions__descripion companions__descripion_strong">Теперь можно легко найти единомышленников!</p>
+      <div class="companoins__cards companions-cards">
+        <div class="companion-card">
+          <img src="" alt="" class="companion-card__level">
+          <div class="companion-card__visites-countries"></div>
+          <h3 class="companion-card__name"></h3>
+          <p class="companion-card__hashtags"></p>
+          <div class="companion-card__transport-icons transport-icons">
+
+          </div>
+        </div>
+        <div class="companion-card">
+          <img src="" alt="" class="companion-card__level">
+          <div class="companion-card__visites-countries"></div>
+          <h3 class="companion-card__name"></h3>
+          <p class="companion-card__hashtags"></p>
+          <div class="companion-card__transport-icons transport-icons">
+
+          </div>
+        </div>
+        <a href="">Показать всех</a> <!-- Ссылка ведет в каталог -->
+      </div>
+    </section>
+    <section class="add-profile">
+      <h2 class="add-profile__header">Добавьте свой профиль</h2>
+      <div class="add-profile__price-list price-list">
+        <p class="price-list__item">Базовое размещение Бесплатно</p>
+        <p class="price-list__item">Вывод на первых позициях 99 руб./мес</p>
+        <p class="price-list__item">Кастомный цвет карточки 59 руб./мес</p>
+        <button class="price-list__for-business">Показать тарифы для бизнеса</button>
+      </div>
+      <div class="add-profile__price-list-for-business price-list-for-business">
+        <h3 class="price-list-for-business__header">Бизнес-тарифы</h2>
+          <p class="price-list-for-business__item">Реклама у блоггера 300 000 руб./пост</p>
+          <p class="price-list-for-business__item">Накрутка подписчиков от 1 руб./шт.</p>
+          <p class="price-list-for-business__item">Лайки от ботов от 20 коп./лайк</p>
+          <p class="price-list-for-business__item">Ваш продакт-плейсмент Индивидуально</p>
+          <button class="price-list-for-business__close-button">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__header">Заинтересовались?</h2>
+      <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a>авторизуйтесь.</a></p>
+      <!-- переход на страницу авторизации. Страницу авторизации реализовывать не нужно. -->
+      <input type="email" placeholder="E-mail">
+      <p class="feedback__any-question">Остались вопросы? Мы с радостью на них ответим!</p>
+      <p class="feedback__email"><a href="mailto:mail@htmlacademy.ru"></a></p>
+      <p class="feedback__phone"><a href="telto:8 800 555-86-28"></a></p>
+    </section>
+    <section class="how-find-us">
+      <h2 class="how-find-us__header">Как нас найти?</h2>
+      <a href="">Проложить маршрут</a>
+      <!-- Ссылка «Проложить маршрут» ведёт на карту (Google или Яндекса) с проложенным маршрутом из центра карты в любую точку -->
+      <div class="how-find-us__map"></div>
+      <!--Заготовка под карту-->
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="" alt="" class="footer__logo">
+    <div class="footer__social-links social-links">
+      <a class="social-links__item" href=""></a>
+      <a class="social-links__item" href=""></a>
+      <a class="social-links__item" href=""></a>
+    </div>
+    <div class="footer__developer">
+      <span>Разработано</span> <a><img src="" alt=""></a>
+    </div>
+  </footer>
+</body>
 </html>
